@@ -62,8 +62,9 @@ Contributions are welcome! Please follow these steps:
 ## 📄 License
 Distributed under the MIT License. See `LICENSE` for more information.
 
-## 📧 Contact
+## 📧 Contact & Contributors
 **Yash** - [GitHub Profile](https://github.com/Yash-007688)
+**CodeDevPro** - Contributor
 
 ---
 *Generated with ❤️ by Antigravity*
