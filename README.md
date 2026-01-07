@@ -6,6 +6,9 @@
 ![Material Design 3](https://img.shields.io/badge/Material_Design_3-757575?style=for-the-badge&logo=material-design&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)
 
+## 📥 Download
+[**Download Latest APK**](finish/HabitTracker.apk)
+
 ## 📖 Overview
 **Habit Tracker** is a modern Android application designed to help you build and maintain positive habits. Combining productivity with gamification, it makes tracking your daily tasks engaging and rewarding.
 
