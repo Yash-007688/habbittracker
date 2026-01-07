@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_medium"
+    android:background="?attr/colorSurface">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weekly Completion"
+        android:textSize="@dimen/text_size_title"
+        android:textStyle="bold"
+        android:textColor="?attr/colorOnSurface"
+        android:layout_marginBottom="@dimen/spacing_large" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:paddingStart="@dimen/spacing_medium"
+        android:paddingEnd="@dimen/spacing_medium"
+        android:layout_marginBottom="@dimen/spacing_medium">
+
+        <!-- Monday -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="bottom|center_horizontal">
+
+            <View
+                android:id="@+id/barMon"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:background="@color/status_completed"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mon"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="?attr/colorOnSurface"
+                android:alpha="0.7" />
+        </LinearLayout>
+
+        <!-- Tuesday -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="bottom|center_horizontal">
+
+            <View
+                android:id="@+id/barTue"
+                android:layout_width="30dp"
+                android:layout_height="80dp"
+                android:background="@color/status_completed"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tue"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="?attr/colorOnSurface"
+                android:alpha="0.7" />
+        </LinearLayout>
+
+        <!-- Wednesday -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="bottom|center_horizontal">
+
+            <View
+                android:id="@+id/barWed"
+                android:layout_width="30dp"
+                android:layout_height="120dp"
+                android:background="@color/status_completed"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wed"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="?attr/colorOnSurface"
+                android:alpha="0.7" />
+        </LinearLayout>
+
+        <!-- Thursday -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="bottom|center_horizontal">
+
+            <View
+                android:id="@+id/barThu"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:background="@color/status_completed"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thu"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="?attr/colorOnSurface"
+                android:alpha="0.7" />
+        </LinearLayout>
+
+        <!-- Friday -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="bottom|center_horizontal">
+
+            <View
+                android:id="@+id/barFri"
+                android:layout_width="30dp"
+                android:layout_height="100dp"
+                android:background="@color/status_completed"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fri"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="?attr/colorOnSurface"
+                android:alpha="0.7" />
+        </LinearLayout>
+
+        <!-- Saturday -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="bottom|center_horizontal">
+
+            <View
+                android:id="@+id/barSat"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/status_pending"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sat"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="?attr/colorOnSurface"
+                android:alpha="0.7" />
+        </LinearLayout>
+
+        <!-- Sunday -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="bottom|center_horizontal">
+
+            <View
+                android:id="@+id/barSun"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:background="@color/status_todo"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sun"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="?attr/colorOnSurface"
+                android:alpha="0.7" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Legend -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="@dimen/spacing_medium">
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@color/status_completed"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/spacing_small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Completed"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="?attr/colorOnSurface"
+                android:alpha="0.7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="@dimen/spacing_medium">
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@color/status_pending"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/spacing_small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="?attr/colorOnSurface"
+                android:alpha="0.7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@color/status_todo"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/spacing_small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To Do"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="?attr/colorOnSurface"
+                android:alpha="0.7" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.habbittracker.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_NotesFragment"
+            app:destination="@id/NotesFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_TimerFragment"
+            app:destination="@id/TimerFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_AlarmFragment"
+            app:destination="@id/AlarmFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_StopwatchFragment"
+            app:destination="@id/StopwatchFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_DashboardFragment"
+            app:destination="@id/DashboardFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_SettingsFragment"
+            app:destination="@id/SettingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.habbittracker.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/NotesFragment"
+        android:name="com.example.habbittracker.NotesFragment"
+        android:label="Notes"
+        tools:layout="@layout/fragment_notes" />
+        
+    <fragment
+        android:id="@+id/TimerFragment"
+        android:name="com.example.habbittracker.TimerFragment"
+        android:label="Timer"
+        tools:layout="@layout/fragment_timer" />
+
+    <fragment
+        android:id="@+id/StopwatchFragment"
+        android:name="com.example.habbittracker.StopwatchFragment"
+        android:label="Stopwatch"
+        tools:layout="@layout/fragment_stopwatch" />
+
+    <fragment
+        android:id="@+id/AlarmFragment"
+        android:name="com.example.habbittracker.AlarmFragment"
+        android:label="Alarm"
+        tools:layout="@layout/fragment_alarm" />
+        
+    <fragment
+        android:id="@+id/DashboardFragment"
+        android:name="com.example.habbittracker.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+        
+    <fragment
+        android:id="@+id/SettingsFragment"
+        android:name="com.example.habbittracker.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>
