@@ -76,13 +76,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
 
         binding.bottomNavigation.setOnItemSelectedListener { item ->
-            if (item.itemId == R.id.navigation_menu) {
-                if (binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
-                    binding.drawerLayout.closeDrawer(GravityCompat.START)
-                } else {
-                    binding.drawerLayout.openDrawer(GravityCompat.START)
-                }
-                return@setOnItemSelectedListener false // Don't select the item
+            if (item.itemId == R.id.navigation_home) {
+                navController.navigate(R.id.FirstFragment)
+                return@setOnItemSelectedListener true
             }
             
             when (item.itemId) {

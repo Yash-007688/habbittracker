@@ -8,11 +8,8 @@
         <intent>
             <action android:name="android.provider.AlarmClock.ACTION_SET_ALARM" />
         </intent>
-    </queries>
-
-    <queries>
         <intent>
-            <action android:name="android.provider.AlarmClock.ACTION_SET_ALARM" />
+            <action android:name="android.provider.AlarmClock.ACTION_SHOW_ALARMS" />
         </intent>
     </queries>
 
